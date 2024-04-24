@@ -27,6 +27,7 @@ app.post('/download-mp4', async (req, res) => {
     const yt_link = req.body.yt_link;
     if(yt_link === "") return res.redirect('/')
     const qualities = await getQualities(yt_link);
+    if(qualities === null) return res.redirect('/')
     const infoVideo = await getInfoVideo(yt_link);
     let titleVidRq = infoVideo.title;
     titleVidRq = titleVidRq.replace(/[^\w\s]/gi, ' ')
@@ -46,8 +47,8 @@ app.post('/download-mp4', async (req, res) => {
             '</select>' +
             `<input type="hidden" name="yt_link" value="${yt_link}">`
         ).replace(
-            '<p class="title text-center text-2xl font-bold mb-10"></p>',
-            `<p class="title text-center text-2xl font-bold mb-10">${infoVideo.title}</p>`
+            '< class="text-center text-2xl font-bold mb-10 w-80"></p>',
+            `<$ class="text-center text-2xl font-bold mb-10 w-80">${infoVideo.title}</p>`
         ).replace(
             '<img src="" alt="">',
             `<img src="https://i.ytimg.com/vi/${infoVideo.videoId}/mqdefault.jpg" alt="${infoVideo.videoId} thumbnail">`

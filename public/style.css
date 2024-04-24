@@ -640,6 +640,18 @@ video {
   width: 10em;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
 .max-w-\[37em\] {
   max-width: 37em;
 }
