@@ -13,7 +13,7 @@
 
 
 
-![image](https://github.com/LOUDO56/FreeTube-MP4/assets/117168736/8f4b7c86-9c45-4e4b-9f1a-1eaea35f18d7)
+![image](https://github.com/LOUDO56/FreeTube-MP4/assets/117168736/48cc3cf8-a2d7-4e49-8364-0091d5410118)
 
 
 ![image](https://github.com/LOUDO56/FreeTube-MP4/assets/117168736/b5c4a4b9-4319-4690-a90b-09132bcdc51c)
