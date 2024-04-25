@@ -47,8 +47,8 @@ app.post('/download-mp4', async (req, res) => {
             '</select>' +
             `<input type="hidden" name="yt_link" value="${yt_link}">`
         ).replace(
-            '< class="text-center text-2xl font-bold mb-10 w-80"></p>',
-            `<$ class="text-center text-2xl font-bold mb-10 w-80">${infoVideo.title}</p>`
+            '<p class="text-center text-2xl font-bold mb-10 w-80"></p>',
+            `<p class="text-center text-2xl font-bold mb-10 w-80">${infoVideo.title}</p>`
         ).replace(
             '<img src="" alt="">',
             `<img src="https://i.ytimg.com/vi/${infoVideo.videoId}/mqdefault.jpg" alt="${infoVideo.videoId} thumbnail">`
